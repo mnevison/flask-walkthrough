@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
 
     <title>Task Manager</title>
@@ -19,7 +19,7 @@
               <ul class="right hide-on-med-and-down">
                 <li><a href="{{ url_for('home') }}">Home</a></li>
                 <li><a href="">New Task</a></li>
-                <li><a href="">Catagories</a></li>
+                <li><a href="{{ url_for('categories') }}">Catagories</a></li>
                 
                 
               </ul>
@@ -29,7 +29,7 @@
           <ul class="sidenav" id="mobile-demo">
             <li><a href="{{ url_for('home') }}">Home</a></li>
             <li><a href="">New Task</a></li>
-            <li><a href="">Catagories</a></li>
+            <li><a href="{{ url_for('categories') }}">Catagories</a></li>
             
           </ul>
     </header>
@@ -40,15 +40,15 @@
     </main>
 
     
-        <footer class="page-footer blue darken-3">
-            <div class="container">
-                <div class="footer-copyright">
-                    <div class="container">
+    <footer class="page-footer blue darken-3">
+        <div class="container">
+            <div class="footer-copyright">
+                <div class="container">
                     For educational purposes only
                     <a class="white-text right" href="https://codeinstitute.net" target="_blank">&copy; Code Institute</a>
-                </div>
-            </div>
-        </footer>
+             </div>
+        </div>
+    </footer>
     
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
