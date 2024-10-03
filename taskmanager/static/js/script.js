@@ -1,35 +1,24 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Initialize sidenav
   let sidenav = document.querySelectorAll(".sidenav");
   M.Sidenav.init(sidenav);
-});
 
-// Modal
-
-document.addEventListener("DOMContentLoaded", function () {
+  // Initialize modals
   let modals = document.querySelectorAll(".modal");
   M.Modal.init(modals, {});
-});
 
-// date picker
-
-document.addEventListener("DOMContentLoaded", function () {
+  // Initialize datepicker
   let datepicker = document.querySelectorAll(".datepicker");
   M.Datepicker.init(datepicker, {
     format: "dd mmmm, yyyy",
     i18n: { done: "Select" },
   });
-});
 
-// select initilization
-
-document.addEventListener("DOMContentLoaded", function () {
+  // Initialize selects
   let selects = document.querySelectorAll("select");
   M.FormSelect.init(selects);
-});
 
-// collapsable
-
-document.addEventListener("DOMContentLoaded", function () {
+  // Initialize collapsibles
   let collapsibles = document.querySelectorAll(".collapsible");
   M.Collapsible.init(collapsibles);
 });
